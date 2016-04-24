@@ -62,3 +62,10 @@ def is_palidrome(n):
 		newStr = c + newStr
 	return newStr == oldStr
 filter(is_palidrome, range(1,100))
+
+sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse = True)
+
+students = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]
+sorted(students, key = itemgetter(0))
+sorted(students, lambda x: x[1])
+
